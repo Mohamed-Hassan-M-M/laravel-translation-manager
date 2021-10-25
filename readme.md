@@ -16,6 +16,10 @@ This way, translations can be saved in git history and no overhead is introduced
 
 ![Screenshot](http://i.imgur.com/4th2krf.png)
 
+## Require
+
+Install mcamara first run `composer require mcamara/laravel-localization` and follow its installation processes at `https://github.com/mcamara/laravel-localization`.
+
 ## Installation
 
 Require this package in your composer.json and run composer update (or run `composer require acmetemplate/laravel-translation-manager` directly):
