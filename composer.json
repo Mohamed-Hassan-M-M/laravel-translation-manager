@@ -18,9 +18,9 @@
     "php": ">=7",
     "illuminate/support": "^5.5|^6|^7|^8",
     "illuminate/translation": "^5.5|^6|^7|^8",
+	"mcamara/laravel-localization": "^1.6",
     "symfony/finder": "^3|^4|^5",
-    "tanmuhittin/laravel-google-translate": "^2.0.1"
-    "mcamara/laravel-localization": "*"
+    "tanmuhittin/laravel-google-translate": "^2.0.1",
   },
   "autoload": {
     "psr-4": {
