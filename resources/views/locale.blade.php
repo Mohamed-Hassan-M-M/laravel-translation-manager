@@ -77,7 +77,7 @@
                                                 <p>
                                                     Current supported locales:
                                                 </p>
-                                                <form  class="form-remove-locale" method="POST" role="form" action="<?php echo action('\Barryvdh\TranslationManager\Controller@postRemoveLocale') ?>" data-confirm="Are you sure to remove this locale and all of data?">
+                                                <form  class="form-remove-locale" method="POST" role="form" action="<?php echo action('\Acmetemplate\TranslationManager\Controller@postRemoveLocale') ?>" data-confirm="Are you sure to remove this locale and all of data?">
                                                     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                                     <ul class="list-locales">
                                                         <?php foreach($changeLocales as $locale): ?>
@@ -93,7 +93,7 @@
                                                         <?php endforeach; ?>
                                                     </ul>
                                                 </form>
-                                                <form class="form-add-locale" method="POST" role="form" action="<?php echo action('\Barryvdh\TranslationManager\Controller@postAddLocale') ?>">
+                                                <form class="form-add-locale" method="POST" role="form" action="<?php echo action('\Acmetemplate\TranslationManager\Controller@postAddLocale') ?>">
                                                     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                                     <div class="form-group">
                                                         <p>
@@ -156,9 +156,9 @@
             $('.group-select').on('change', function(){
                 var group = $(this).val();
                 if (group) {
-                    window.location.href = '<?php echo action('\Barryvdh\TranslationManager\Controller@getView') ?>/'+$(this).val();
+                    window.location.href = '<?php echo action('\Acmetemplate\TranslationManager\Controller@getView') ?>/'+$(this).val();
                 } else {
-                    window.location.href = '<?php echo action('\Barryvdh\TranslationManager\Controller@getIndex') ?>';
+                    window.location.href = '<?php echo action('\Acmetemplate\TranslationManager\Controller@getIndex') ?>';
                 }
             });
 
