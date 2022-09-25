@@ -20,7 +20,7 @@
     "illuminate/translation": "*",
 	"mcamara/laravel-localization": "*",
     "symfony/finder": "*",
-    "tanmuhittin/laravel-google-translate": "*",
+    "tanmuhittin/laravel-google-translate": "*"
   },
   "autoload": {
     "psr-4": {
