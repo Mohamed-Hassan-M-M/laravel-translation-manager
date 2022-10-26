@@ -147,6 +147,9 @@ class Manager
         if ($newStatus !== (int) $translation->status) {
             $translation->status = $newStatus;
         }
+		if($newStatus){
+            $translation->version = (int)$translation->version + 1;
+        }
 
         // Only replace when empty, or explicitly told so
         if ($replace || ! $translation->value) {
