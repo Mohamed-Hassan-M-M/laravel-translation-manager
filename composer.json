@@ -1,6 +1,7 @@
 {
-  "name": "acmetemplate/laravel-translation-manager",
+  "name": "acmepackage/laravel-translation-manager",
   "description": "Manage Laravel Translations",
+  	"version": "v1.1.0",
   "keywords": [
     "laravel",
     "translations",
@@ -19,12 +20,11 @@
     "illuminate/support": "*",
     "illuminate/translation": "*",
 	"mcamara/laravel-localization": "*",
-    "symfony/finder": "*",
-    "tanmuhittin/laravel-google-translate": "*"
+    "symfony/finder": "*"
   },
   "autoload": {
     "psr-4": {
-      "Acmetemplate\\TranslationManager\\": "src/"
+      "acmepackage\\TranslationManager\\": "src/"
     }
   },
   "extra": {
@@ -33,7 +33,7 @@
     },
     "laravel": {
       "providers": [
-        "Acmetemplate\\TranslationManager\\ManagerServiceProvider"
+        "acmepackage\\TranslationManager\\ManagerServiceProvider"
       ]
     }
   },
