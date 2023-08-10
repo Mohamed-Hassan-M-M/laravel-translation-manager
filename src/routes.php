@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
-//$config = array_merge(config('translation-manager.route'), ['namespace' => 'Acmetemplate\TranslationManager', 'prefix' => 'translations']);
+//$config = array_merge(config('translation-manager.route'), ['namespace' => 'acmetemplate\TranslationManager', 'prefix' => 'translations']);
 Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function() {
     Route::group(['prefix' => 'admin/translations'], function($router)
     {

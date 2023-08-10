@@ -28,20 +28,20 @@ Require this package in your composer.json and run composer update (or run `comp
 
 After updating composer, add the ServiceProvider to the providers array in `config/app.php`
 
-    'Acmetemplate\TranslationManager\ManagerServiceProvider',
+    'acmetemplate\TranslationManager\ManagerServiceProvider',
 
 You need to run the migrations for this package.
 
-    $ php artisan vendor:publish --provider="Acmetemplate\TranslationManager\ManagerServiceProvider" --tag=migrations
+    $ php artisan vendor:publish --provider="acmetemplate\TranslationManager\ManagerServiceProvider" --tag=migrations
     $ php artisan migrate
 
 You need to publish the config file for this package. This will add the file `config/translation-manager.php`, where you can configure this package.
 
-    $ php artisan vendor:publish --provider="Acmetemplate\TranslationManager\ManagerServiceProvider" --tag=config
+    $ php artisan vendor:publish --provider="acmetemplate\TranslationManager\ManagerServiceProvider" --tag=config
 
 In order to edit the default template, the views must be published as well. The views will then be placed in `resources/views/vendor/translation-manager`.
 
-    $ php artisan vendor:publish --provider="Acmetemplate\TranslationManager\ManagerServiceProvider" --tag=views
+    $ php artisan vendor:publish --provider="acmetemplate\TranslationManager\ManagerServiceProvider" --tag=views
 
 Routes are added in the ServiceProvider. You can set the group parameters for the routes in the configuration.
 You can change the prefix or filter/middleware for the routes. If you want full customisation, you can extend the ServiceProvider and override the `map()` function.
@@ -152,7 +152,7 @@ To detect missing translations, we can swap the Laravel TranslationServiceProvid
 In your `config/app.php`, comment out the original TranslationServiceProvider and add the one from this package:
 
     //'Illuminate\Translation\TranslationServiceProvider',
-    'Acmetemplate\TranslationManager\TranslationServiceProvider',
+    'acmetemplate\TranslationManager\TranslationServiceProvider',
 
 This will extend the Translator and will create a new database entry, whenever a key is not found, so you have to visit the pages that use them.
 This way it shows up in the webinterface and can be edited and later exported.

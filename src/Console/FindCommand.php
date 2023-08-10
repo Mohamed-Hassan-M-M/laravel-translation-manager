@@ -1,8 +1,8 @@
 <?php
 
-namespace Acmetemplate\TranslationManager\Console;
+namespace acmetemplate\TranslationManager\Console;
 
-use Acmetemplate\TranslationManager\Manager;
+use acmetemplate\TranslationManager\Manager;
 use Illuminate\Console\Command;
 
 class FindCommand extends Command
@@ -21,7 +21,7 @@ class FindCommand extends Command
      */
     protected $description = 'Find translations in php/twig files';
 
-    /** @var \Acmetemplate\TranslationManager\Manager */
+    /** @var \acmetemplate\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

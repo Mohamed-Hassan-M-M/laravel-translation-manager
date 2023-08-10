@@ -1,8 +1,8 @@
 <?php
 
-namespace Acmetemplate\TranslationManager\Console;
+namespace acmetemplate\TranslationManager\Console;
 
-use Acmetemplate\TranslationManager\Manager;
+use acmetemplate\TranslationManager\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,7 +23,7 @@ class ExportCommand extends Command
      */
     protected $description = 'Export translations to PHP files';
 
-    /** @var \Acmetemplate\TranslationManager\Manager */
+    /** @var \acmetemplate\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

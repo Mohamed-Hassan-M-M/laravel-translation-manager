@@ -1,4 +1,4 @@
-<?php namespace Acmetemplate\TranslationManager;
+<?php namespace acmetemplate\TranslationManager;
 
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Illuminate\Events\Dispatcher;

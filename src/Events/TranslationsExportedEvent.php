@@ -6,7 +6,7 @@
  * Time: 12:40 PM
  */
 
-namespace Acmetemplate\TranslationManager\Events;
+namespace acmetemplate\TranslationManager\Events;
 
 
 class TranslationsExportedEvent

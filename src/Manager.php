@@ -1,6 +1,6 @@
 <?php
 
-namespace Acmetemplate\TranslationManager;
+namespace acmetemplate\TranslationManager;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -8,8 +8,8 @@ use Symfony\Component\Finder\Finder;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Foundation\Application;
-use Acmetemplate\TranslationManager\Models\Translation;
-use Acmetemplate\TranslationManager\Events\TranslationsExportedEvent;
+use acmetemplate\TranslationManager\Models\Translation;
+use acmetemplate\TranslationManager\Events\TranslationsExportedEvent;
 
 class Manager
 {

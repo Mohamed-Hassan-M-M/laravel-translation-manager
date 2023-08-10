@@ -1,4 +1,4 @@
-<?php namespace Acmetemplate\TranslationManager\Models;
+<?php namespace acmetemplate\TranslationManager\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;

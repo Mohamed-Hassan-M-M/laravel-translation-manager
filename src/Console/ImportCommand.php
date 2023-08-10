@@ -1,8 +1,8 @@
 <?php
 
-namespace Acmetemplate\TranslationManager\Console;
+namespace acmetemplate\TranslationManager\Console;
 
-use Acmetemplate\TranslationManager\Manager;
+use acmetemplate\TranslationManager\Manager;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 
@@ -22,7 +22,7 @@ class ImportCommand extends Command
      */
     protected $description = 'Import translations from the PHP sources';
 
-    /** @var \Acmetemplate\TranslationManager\Manager */
+    /** @var \acmetemplate\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)

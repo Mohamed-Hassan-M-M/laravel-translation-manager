@@ -1,15 +1,15 @@
-<?php namespace Acmetemplate\TranslationManager;
+<?php namespace acmetemplate\TranslationManager;
 
 use Illuminate\Http\Request;
 //use Illuminate\Routing\Controller as BaseController;
 use App\Http\Controllers\Controller as BaseController;
-use Acmetemplate\TranslationManager\Models\Translation;
+use acmetemplate\TranslationManager\Models\Translation;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
 class Controller extends BaseController
 {
-    /** @var \Acmetemplate\TranslationManager\Manager  */
+    /** @var \acmetemplate\TranslationManager\Manager  */
     protected $manager;
 
     public function __construct(Manager $manager)
@@ -49,7 +49,7 @@ class Controller extends BaseController
             ->with('group', $group)
             ->with('numTranslations', $numTranslations)
             ->with('numChanged', $numChanged)
-            ->with('editUrl', $group ? action('\Acmetemplate\TranslationManager\Controller@postEdit', [$group]) : null)
+            ->with('editUrl', $group ? action('\acmetemplate\TranslationManager\Controller@postEdit', [$group]) : null)
             ->with('deleteEnabled', $this->manager->getConfig('delete_enabled'));
     }
 
@@ -153,7 +153,7 @@ class Controller extends BaseController
         $group = str_replace(".", '', $request->input('new-group'));
         if ($group)
         {
-            return redirect()->action('\Acmetemplate\TranslationManager\Controller@getView',$group);
+            return redirect()->action('\acmetemplate\TranslationManager\Controller@getView',$group);
         }
         else
         {
@@ -199,7 +199,7 @@ class Controller extends BaseController
                     'name' => $newLocale . '|' . $base_string->key,
                 ]);
                 app()->call(
-                    'Acmetemplate\TranslationManager\Controller@postEdit',
+                    'acmetemplate\TranslationManager\Controller@postEdit',
                     [
                         'group' => $group
                     ]

@@ -1,9 +1,9 @@
 <?php
 
-namespace Acmetemplate\TranslationManager\Console;
+namespace acmetemplate\TranslationManager\Console;
 
 use Illuminate\Console\Command;
-use Acmetemplate\TranslationManager\Manager;
+use acmetemplate\TranslationManager\Manager;
 
 class ResetCommand extends Command
 {
@@ -21,7 +21,7 @@ class ResetCommand extends Command
      */
     protected $description = 'Delete all translations from the database';
 
-    /** @var \Acmetemplate\TranslationManager\Manager */
+    /** @var \acmetemplate\TranslationManager\Manager */
     protected $manager;
 
     public function __construct(Manager $manager)
